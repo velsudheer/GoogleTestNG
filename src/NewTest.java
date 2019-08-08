@@ -9,7 +9,8 @@ public class NewTest {
     String driverPath = "chromedriver";
     public WebDriver driver ; 
      
- 
+  @Test
+  public void verifyHomepageTitle() {
        
       System.out.println("launching Chrome Browser"); 
       System.setProperty("webdriver.chrome.driver", driverPath);
@@ -69,5 +70,5 @@ public class NewTest {
 		driver.findElement(By.xpath("//table[@class='F cf zt']//tbody//child::tr[1]//child::td[@tabindex='-1']")).click();
 		
       driver.close();
- 
+  }
 }
