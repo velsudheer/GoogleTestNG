@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="sample_suite" verbose="1" parallel="false" thread-count="2">
   <test name="sample_test">
-    <parameter name="name" value="GoogleCI"/>
+    <parameter name="name" value="GoogleTestNG"/>
     <classes>
-      <class name="NewTest" />
+      <class name=".NewTest" />
     </classes>
   </test>
 </suite>
