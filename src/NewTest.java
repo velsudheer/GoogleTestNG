@@ -13,9 +13,9 @@ public class NewTest {
   public void LoginGmail() {
        
       System.out.println("launching Chrome Browser"); 
-      System.setProperty("webdriver.chrome.driver", "/bin/chromedriver");
+      System.setProperty("webdriver.chrome.driver", "/home/circleci/repo/chromedriver");
 	  System.out.println("1");
-	public ChromeOptions options = new ChromeOptions();
+	
 	  System.out.println("2");
 	  options.addArgument("--headless");
 	  System.out.println("3");
