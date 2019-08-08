@@ -61,6 +61,6 @@ public class NewTest {
 				
 		driver.findElement(By.xpath("//table[@class='F cf zt']//tbody//child::tr[1]//child::td[@tabindex='-1']")).click();
 		
-      driver.close();
+      //driver.close();
   }
 }
