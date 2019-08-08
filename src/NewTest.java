@@ -14,7 +14,9 @@ public class NewTest {
        
       System.out.println("launching Chrome Browser"); 
       System.setProperty("webdriver.chrome.driver", driverPath);
-      driver = new ChromeDriver();
+	public ChromeOptions options = new ChromeOptions();
+	  options.addArgument("--headless");
+      driver = new ChromeDriver(options);
       driver.manage().window().maximize();
       driver.get(baseUrl);
       try {
