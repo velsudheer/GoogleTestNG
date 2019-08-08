@@ -6,6 +6,7 @@ jobs:
     steps:
     - checkout
     - run: sudo apt update
+    - run: apt list --upgradable
     - run: google-chrome --version
     - run: chmod +777 chromedriver
     #- run: xvfb-run java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone.jar >/dev/null 2>&1 &
