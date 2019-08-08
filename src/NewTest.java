@@ -10,7 +10,7 @@ public class NewTest {
     public WebDriver driver ; 
      
   @Test
-  public void verifyHomepageTitle() {
+  public void LoginGmail() {
        
       System.out.println("launching Chrome Browser"); 
       System.setProperty("webdriver.chrome.driver", driverPath);
@@ -66,29 +66,8 @@ public class NewTest {
   }catch (InterruptedException e) {
 	    e.printStackTrace();
 	}
-				
 		driver.findElement(By.xpath("//table[@class='F cf zt']//tbody//child::tr[1]//child::td[@tabindex='-1']")).click();
 		
       driver.close();
   }
-@BeforeMethod
- public void beforeMethod() {
- System.out.println("This piece of code is executed before method:- myTestMethod");
- System.setProperty("webdriver.chrome.driver", driverPath);
- }
- 
- @AfterMethod
- public void afterMethod() {
- System.out.println("This piece of code is executed after method:- myTestMethod");
- }
- 
- @BeforeClass
- public void beforeClass() {
- System.out.println("This piece of code is executed before the class is executed");
- }
- 
- @AfterClass
- public void afterClass() {
- System.out.println("This piece of code is executed after the class is executed");
- }	
 }
