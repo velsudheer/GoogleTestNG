@@ -19,6 +19,7 @@ public class NewTest {
       driver = new ChromeDriver(options);
       driver.manage().window().maximize();
       driver.get(baseUrl);
+	  System.out.println("Enter Username");
       try {
         Thread.sleep(5000);
 		driver.findElement(By.xpath("//input[@aria-label='Email or phone']")).sendKeys("sudheer.velagapudi@testingxperts.com");
@@ -32,6 +33,7 @@ public class NewTest {
       }catch (InterruptedException e) {
   	    e.printStackTrace();
   	}
+	  System.out.println("Enter Password");
       try {
 
 		Thread.sleep(2000);
@@ -52,6 +54,7 @@ public class NewTest {
   }catch (InterruptedException e) {
 	    e.printStackTrace();
 	}
+	  System.out.println("Loggged in Sucessfully");
   try {
 
 		Thread.sleep(10000);
