@@ -11,5 +11,6 @@ jobs:
     #- run: xvfb-run java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone.jar >/dev/null 2>&1 &
     - run: chromedriver --version
     - run: java -version
-    - run: java -jar testng-6.0.jar
+    - run: cd ../
+    - run: ls
     - run: java -cp "testng-6.0.jar:jcommander-1.7.jar" org.testng.TestNG testing.xml
