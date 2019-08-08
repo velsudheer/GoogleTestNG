@@ -17,4 +17,4 @@ jobs:
     - run: xvfb-run java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone-3.141.59.jar >/dev/null 2>&1 &
     - run: chromedriver --version
     - run: java -version
-    - run: java -cp "chromedriver:selenium-server-standalone-3.141.59.jar:testng-6.14.3.jar:jcommander-1.7.jar:bin" org.testng.TestNG testng.xml
+    - run: java -cp "beanshell.bsh.b6.jar:snakeyaml.jar:selenium-server-standalone-3.141.59.jar:testng-6.14.3.jar:jcommander-1.7.jar:bin" org.testng.TestNG testng.xml
