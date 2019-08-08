@@ -13,4 +13,4 @@ jobs:
     - run: java -version
     - run: cd ../
     - run: ls
-    - run: java --class-path "/lib/:/bin" org.testng.TestNG testing.xml
+    - run: java -cp "lib/:bin/" org.testng.TestNG testing.xml
