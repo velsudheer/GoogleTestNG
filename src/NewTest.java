@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class NewTest {
     public String baseUrl = "https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
     public String driverPath = "chromedriver";
-    public WebDriver driver ; 
+    public WebDriver driver; 
      
   @Test
   public void LoginGmail() {
@@ -16,10 +16,9 @@ public class NewTest {
       System.setProperty("webdriver.chrome.driver", "/home/circleci/repo/chromedriver");
 	  System.out.println("1");
 	
-	  System.out.println("2");
-	  options.addArgument("--headless");
+	  
 	  System.out.println("3");
-      driver = new ChromeDriver(options);
+      driver = new ChromeDriver();
 	  System.out.println("4");
       driver.manage().window().maximize();
 	  System.out.println("launching Chrome Browser");
