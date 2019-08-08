@@ -9,7 +9,7 @@ public class NewTest {
     public String driverPath = "chromedriver";
     public WebDriver driver ; 
      
-  @Test
+  
   public void verifyHomepageTitle() {
        
       System.out.println("launching Chrome Browser"); 
