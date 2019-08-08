@@ -71,4 +71,24 @@ public class NewTest {
 		
       driver.close();
   }
+@BeforeMethod
+ public void beforeMethod() {
+ System.out.println("This piece of code is executed before method:- myTestMethod");
+ System.setProperty("webdriver.chrome.driver", driverPath);
+ }
+ 
+ @AfterMethod
+ public void afterMethod() {
+ System.out.println("This piece of code is executed after method:- myTestMethod");
+ }
+ 
+ @BeforeClass
+ public void beforeClass() {
+ System.out.println("This piece of code is executed before the class is executed");
+ }
+ 
+ @AfterClass
+ public void afterClass() {
+ System.out.println("This piece of code is executed after the class is executed");
+ }	
 }
