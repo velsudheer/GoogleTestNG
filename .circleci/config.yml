@@ -13,4 +13,4 @@ jobs:
     - run: java -version
     - run: cd ../
     - run: ls
-    - run: java -cp "testng-6.0.jar;jcommander-1.7.jar" org.testng.TestNG testing.xml
+    - run: java -cp "testng-6.0.jar:jcommander-1.7.jar" org.testng.TestNG testing.xml
