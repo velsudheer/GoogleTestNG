@@ -14,10 +14,15 @@ public class NewTest {
        
       System.out.println("launching Chrome Browser"); 
       System.setProperty("webdriver.chrome.driver", driverPath);
+	  System.out.println("1");
 	public ChromeOptions options = new ChromeOptions();
+	  System.out.println("2");
 	  options.addArgument("--headless");
+	  System.out.println("3");
       driver = new ChromeDriver(options);
+	  System.out.println("4");
       driver.manage().window().maximize();
+	  System.out.println("launching Chrome Browser");
       driver.get(baseUrl);
 	  System.out.println("Enter Username");
       try {
