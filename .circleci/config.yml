@@ -12,7 +12,6 @@ jobs:
     - checkout
     - setup_remote_docker: 
          docker_layer_caching: true
-    - run: mvn dependency:go-offline
     - run: sudo apt update
     - run: apt list --upgradable
     - run: google-chrome --version
