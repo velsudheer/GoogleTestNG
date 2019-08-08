@@ -3,7 +3,7 @@
   <test name="sample_test">
     <parameter name="name" value="GoogleCI"/>
     <classes>
-      <class name="NewTest" />
+      <class name="bin/NewTest" />
     </classes>
   </test>
 </suite>
