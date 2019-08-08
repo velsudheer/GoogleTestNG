@@ -13,7 +13,7 @@ public class NewTest {
   public void LoginGmail() {
        
       System.out.println("launching Chrome Browser"); 
-      System.setProperty("webdriver.chrome.driver", "/chromedriver");
+      System.setProperty("webdriver.chrome.driver", "../chromedriver");
 	  System.out.println("1");
 	public ChromeOptions options = new ChromeOptions();
 	  System.out.println("2");
