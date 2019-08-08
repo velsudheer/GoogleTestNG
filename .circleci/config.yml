@@ -9,7 +9,7 @@ jobs:
     - run: apt list --upgradable
     - run: google-chrome --version
     - run: chmod +777 chromedriver
-    #- run: xvfb-run java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone.jar >/dev/null 2>&1 &
+    - run: xvfb-run java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone-3.141.59.jar >/dev/null 2>&1 &
     - run: chromedriver --version
     - run: java -version
     - run: java -cp "testng-6.14.3.jar:jcommander-1.7.jar:bin" org.testng.TestNG testng.xml
