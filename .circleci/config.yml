@@ -17,6 +17,3 @@ jobs:
     - run: chmod +777 src/chromedriver
     - run: chmod +777 test-output
     - run: java -cp "/home/circleci/repo/eclipse.jar:/home/circleci/repo/beanshell.bsh.b6.jar:snakeyaml.jar:/home/circleci/repo/selenium-server-standalone-3.141.59.jar:/home/circleci/repo/testng-6.14.3.jar:/home/circleci/repo/jcommander-1.7.jar:/home/circleci/repo/bin/" org.testng.TestNG testng.xml
-    
-    - test-output:
-    path: test-output
